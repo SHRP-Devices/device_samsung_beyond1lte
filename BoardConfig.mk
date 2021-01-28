@@ -1,5 +1,6 @@
 # Platform
-DEVICE_PATH := device/samsung/beyond1lte
+DEVICE_CODENAME := beyond1lte
+DEVICE_PATH := device/samsung/$(DEVICE_CODENAME)
 BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := exynos5
 TARGET_BOARD_PLATFORM_GPU := mali-g76
@@ -62,6 +63,33 @@ TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/kernel
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/dtbo
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --header_version 1
+
+# SHRP flags
+SHRP_PATH := $(DEVICE_PATH)
+SHRP_MAINTAINER := corsicanu
+SHRP_DEVICE_CODE := $(DEVICE_CODENAME)
+SHRP_EDL_MODE := 0
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FONP_1 := /sys/devices/virtual/camera/flash/rear_flash
+SHRP_FONP_2 := 
+SHRP_FONP_3 := 
+SHRP_FLASH_MAX_BRIGHTNESS := 1
+SHRP_REC := /dev/block/platform/13d60000.ufs/by-name/recovery
+SHRP_AB := false
+SHRP_REC_TYPE := SAR
+SHRP_DEVICE_TYPE := A_Only
+SHRP_STATUSBAR_RIGHT_PADDING := 40
+SHRP_STATUSBAR_LEFT_PADDING := 40
+SHRP_EXPRESS := true
+SHRP_OFFICIAL := true
+SHRP_DARK := true
+SHRP_ALT_REBOOT := true
+LZMA_RAMDISK_TARGETS := recovery
+LZMA_COMPRESSION := -9
 
 # Include
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
