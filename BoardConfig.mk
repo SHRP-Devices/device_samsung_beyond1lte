@@ -54,7 +54,7 @@ TW_EXCLUDE_TWRPAPP := true
 
 # Release related flags
 PLATFORM_VERSION := 11
-PLATFORM_SECURITY_PATCH := 2021-03-01
+PLATFORM_SECURITY_PATCH := 2021-04-01
 
 # Kernel
 BOARD_KERNEL_BASE := 0x10000000
@@ -90,6 +90,34 @@ SHRP_DARK := true
 SHRP_ALT_REBOOT := true
 LZMA_RAMDISK_TARGETS := recovery
 LZMA_COMPRESSION := -9
+
+# SHRP addons
+SHRP_EXTERNAL_ADDON_PATH := $(DEVICE_PATH)/addons/
+SHRP_SKIP_DEFAULT_ADDON_1 := true
+SHRP_SKIP_DEFAULT_ADDON_2 := true
+INC_IN_REC_ADDON_3 := true
+SHRP_SKIP_DEFAULT_ADDON_4 := true
+
+SHRP_EXTERNAL_ADDON_1_NAME := "Security patch fixer"
+SHRP_EXTERNAL_ADDON_1_INFO := "Patch boot/recovery with security patch of the current system"
+SHRP_EXTERNAL_ADDON_1_FILENAME := "Security_patch_fixer_v0.4.zip"
+SHRP_EXTERNAL_ADDON_1_BTN_TEXT := "Patch now"
+SHRP_EXTERNAL_ADDON_1_SUCCESSFUL_TEXT := "Successfuly patched"
+SHRP_INC_IN_REC_EXTERNAL_ADDON_1 := true
+
+SHRP_EXTERNAL_ADDON_2_NAME := "Bootlogo patcher"
+SHRP_EXTERNAL_ADDON_2_INFO := "Disable bootlogo warnings - exynos only"
+SHRP_EXTERNAL_ADDON_2_FILENAME := "TWRP_Bootlogo_patcher_v1.3.zip"
+SHRP_EXTERNAL_ADDON_2_BTN_TEXT := "Patch now"
+SHRP_EXTERNAL_ADDON_2_SUCCESSFUL_TEXT := "Successfuly patched"
+SHRP_INC_IN_REC_EXTERNAL_ADDON_2 := true
+
+SHRP_EXTERNAL_ADDON_3_NAME := "Samsung Multidisabler - v3.1"
+SHRP_EXTERNAL_ADDON_3_INFO := "Simple Samsung security services disabler"
+SHRP_EXTERNAL_ADDON_3_FILENAME := "multidisabler-samsung-3.1.zip"
+SHRP_EXTERNAL_ADDON_3_BTN_TEXT := "Patch now"
+SHRP_EXTERNAL_ADDON_3_SUCCESSFUL_TEXT := "Successfuly patched"
+SHRP_INC_IN_REC_EXTERNAL_ADDON_3 := true
 
 # Include
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
