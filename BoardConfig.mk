@@ -120,9 +120,9 @@ SHRP_EXTERNAL_ADDON_3_BTN_TEXT := "Patch now"
 SHRP_EXTERNAL_ADDON_3_SUCCESSFUL_TEXT := "Successfuly patched"
 SHRP_INC_IN_REC_EXTERNAL_ADDON_3 := true
 
-SHRP_EXTERNAL_ADDON_4_NAME := "F2FS enabled fstab - only for Android 11"
+SHRP_EXTERNAL_ADDON_4_NAME := "F2FS enabled fstab - only for Android 11 and 12"
 SHRP_EXTERNAL_ADDON_4_INFO := "Patched fstab to allow booting with f2fs formatted partitions"
-SHRP_EXTERNAL_ADDON_4_FILENAME := "f2fs_a11_fstab_flashable.zip"
+SHRP_EXTERNAL_ADDON_4_FILENAME := "f2fs_fstab_flashable.zip"
 SHRP_EXTERNAL_ADDON_4_BTN_TEXT := "Flash now"
 SHRP_EXTERNAL_ADDON_4_SUCCESSFUL_TEXT := "Successfuly flashed"
 SHRP_INC_IN_REC_EXTERNAL_ADDON_4 := true
