@@ -108,7 +108,7 @@ SHRP_INC_IN_REC_EXTERNAL_ADDON_1 := true
 
 SHRP_EXTERNAL_ADDON_2_NAME := "Bootlogo patcher"
 SHRP_EXTERNAL_ADDON_2_INFO := "Disable bootlogo warnings - exynos only"
-SHRP_EXTERNAL_ADDON_2_FILENAME := "TWRP_Bootlogo_patcher_v1.3.zip"
+SHRP_EXTERNAL_ADDON_2_FILENAME := "TWRP_Bootlogo_patcher_v1.5.zip"
 SHRP_EXTERNAL_ADDON_2_BTN_TEXT := "Patch now"
 SHRP_EXTERNAL_ADDON_2_SUCCESSFUL_TEXT := "Successfuly patched"
 SHRP_INC_IN_REC_EXTERNAL_ADDON_2 := true
